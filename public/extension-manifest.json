@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Sling of David",
+  "version": "0.1.0",
+  "description": "A chrome extension that allows users to view alternative ways of buying their Amazon goods from local businesses.",
+  "author": "Steven McHenry",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"],
+      "css": ["main.css"]
+    }
+  ],
+  "web_accessible_resources": ["static/*"]
+}
